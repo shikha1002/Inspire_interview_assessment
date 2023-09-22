@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.mat-icon{
+    cursor: pointer;
+}
+
+.mat-mdc-raised-button {
+    margin: 0 2px 0 2px;
+    cursor: pointer;
+}
+
+.align-item {
+    text-align: center;
+}

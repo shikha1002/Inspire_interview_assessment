@@ -1,0 +1,24 @@
+<div *ngIf="userDetail!" class="users">
+    <div class="align-item">
+        <h1>{{userDetail.author}}</h1>
+        <h1>{{userDetail.birthday}} </h1>
+        <h1>{{userDetail.birthPlace}}</h1>
+        <button  mat-raised-button color="primary" (click)="sortByTitle()" class="primary">Sort by Name</button>
+        <button  mat-raised-button color="primary" (click)="addBook()" class="primary">Add Book</button>
+    </div>
+
+    <div class="row">
+        <ng-container *ngFor="let book of userDetail.books">
+            <div class="col align-item">
+                <img [src]="book.imageUrl" style="width:100%; height: 400px;">
+                <h4> <a [href]="book.purchaseLink">{{book.title}}</a> ( {{book.PublishDate}} )</h4>
+                <mat-icon (click)="deleteBook(book.title)" class="cursor">
+                    delete
+                </mat-icon>
+                <mat-icon class="cursor" (click)="update(book.title)">
+                    edit
+                </mat-icon>
+            </div>
+        </ng-container>
+    </div>
+</div>

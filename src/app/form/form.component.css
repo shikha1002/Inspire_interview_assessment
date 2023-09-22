@@ -1,0 +1,15 @@
+.mat-mdc-dialog-actions {
+    justify-content: end;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.upload-file-margin {
+    margin-bottom: 10px;
+}
+
+.content{
+    margin: 0% 5% 0% 5%;
+}
